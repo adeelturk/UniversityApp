@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/universitylistFragment">
+
+    <fragment
+        android:id="@+id/universitylistFragment"
+        android:name="com.turk.universitylisting.ui.UniversityListFragment"
+        android:label="UniversityListFragment" >
+
+        <argument android:name="selectedUniv"
+            app:argType="com.turk.dtos.model.University"/>
+        <action
+            android:id="@+id/action_universitylistFragment_to_universityDetailFragment"
+            app:destination="@id/universityDetailFragment" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/universityDetailFragment"
+        android:name="com.turk.universitydetails.ui.UniversityDetailFragment"
+        android:label="UniversityDetailFragment" >
+        <!--<action
+            android:id="@+id/action_weatherReportFragment_to_citiesListFragment"
+            app:destination="@id/citiesListFragment" />-->
+    </fragment>
+
+</navigation>

@@ -16,9 +16,17 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        gradlePluginPortal()
     }
 }
 
-rootProject.name = "MyGalleryApp"
+rootProject.name = "UniversityApp"
 include(":app")
- 
+include(":dtos")
+include(":localPersistance")
+include(":common")
+include(":network")
+include(":universityReposiotry")
+include(":UniversityListing")
+include(":business")
+include(":universityDetails")
